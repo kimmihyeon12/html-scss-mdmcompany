@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "view":"node-sass --watch ./public/scss/app.scss ./public/css/style.css"
+        "view": "node-sass --watch ./public/scss/app.scss ./public/css/style.css"
     },
     "keywords": [],
     "author": "",
