@@ -8,7 +8,141 @@
     }
 
     .text-wrap {
- position: absolute;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+
+        p {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 6px;
+            margin-bottom: 20px;
+        }
+
+        >strong {
+            font-size: 88px;
+            font-weight: 700;
+            margin-bottom: 150px;
+        }
+      
+        .tab {
+            >ul {
+                width: 59vw;
+                    height: 50vh;
+                  
+                color: white;
+                align-items: center;
+           
+                .div1:hover{
+                    background-image:none;
+                    background-color: orange;
+                    margin-bottom: 60px;
+                    transition-duration: 0.5s;
+                    box-shadow: 30px 40px 30px 0px rgba(0, 0, 0, 0.3);
+                }
+                .div2:hover{
+                    background-image:none;
+                    background-color: orange;
+                    margin-bottom: 60px;
+                    transition-duration: 0.5s;
+                    box-shadow: 30px 40px 30px 0px rgba(0, 0, 0, 0.3);
+                }
+           
+                .div3:hover{
+                    background-image:none;
+                    background-color: orange;
+                    margin-bottom: 60px;
+                    transition-duration: 0.5s;
+                    box-shadow: 30px 40px 30px 0px rgba(0, 0, 0, 0.3);
+                }
+           
+           
+                .div1 {
+                    background-image: url(http://www.mdmworld.co.kr/assets/pc/images/main/bg-division1.jpg);
+                }
+
+                .div2 {
+                    background-image: url(http://www.mdmworld.co.kr/assets/pc/images/main/bg-division2.jpg);
+                }
+
+                .div3 {
+                    background-image: url(http://www.mdmworld.co.kr/assets/pc/images/main/bg-division3.jpg);
+                }
+
+                display: flex;
+                
+                >li {
+
+                    padding-left: 30px;
+                    padding-top: 30px;
+                    padding-bottom: 100px;
+                    width: 16vw;
+                    height: 22vh;
+                    margin-left: 30px;
+
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        strong {
+                            font-size: 35px;
+                            font-weight: 700;
+
+                            margin-bottom: 20px;
+
+                        }
+
+                        span {
+                            color: lightgray;
+                            font-size: 18px;
+                            font-weight: 300;
+                            letter-spacing: 1px;
+                            margin-bottom: 35px;
+                        }
+
+                        li {
+                            font-size: 16px;
+                            font-weight: 300;
+                        }
+                       
+
+                        ul {
+                            list-style-type: square;
+                            padding: 0px;
+
+                            li::before {
+                                content: "·";
+                                margin: 0px;
+                                font-size: 20px;
+                            }
+
+                            li {
+                                margin-bottom: 10px;
+                                width: 7.6vw;
+                                display: inline-block;
+                                // margin-left: 20px;
+
+                            }
+
+                        }
+
+                        a {
+                            display: none;
+                        }
+                    }
+
+
+                }
+
+
+            }
+        }
 
     }
 }

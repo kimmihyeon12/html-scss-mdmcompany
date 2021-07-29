@@ -3,7 +3,7 @@
     height: 100vh;
     position: relative;
 
-    .img-wrap {
+    .img-wrap {  width: 100%;
         position: absolute;
     }
 
@@ -42,7 +42,7 @@
             color: white;
 
             >li {
-                width: 21vw;
+                width: 22vw;
                 height: 100vh;
                 border: 1px solid rgba(255, 255, 255, 0.1);
                 display: flex;

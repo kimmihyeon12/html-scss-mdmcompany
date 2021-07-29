@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -140,9 +141,6 @@ section {
 [hidden] {
   display: none; }
 
-body {
-  line-height: 1; }
-
 menu,
 ol,
 ul {
@@ -163,157 +161,260 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.main {
-  width: 100%;
-  font-family: 'Noto Sans KR', sans-serif;
-  display: flex;
-  flex-direction: column; }
-  .main .one-page {
-    position: relative;
+body {
+  overflow-x: hidden; }
+  body .main {
     width: 100%;
-    height: 100vh; }
-    .main .one-page .img-wrap {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-direction: column; }
+    body .main .one-page {
+      position: relative;
       width: 100%;
-      position: absolute;
-      height: 100vh;
-      display: flex;
-      justify-content: center; }
-      .main .one-page .img-wrap .img-slider {
-        width: 100%;
+      height: 100vh; }
+      body .main .one-page .img-wrap {
+        width: 100vw;
+        position: absolute;
         height: 100vh;
         display: flex;
-        position: absolute; }
-      .main .one-page .img-wrap .img-btn {
-        width: 70%;
-        height: 100vh;
-        display: flex;
-        position: absolute;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 10; }
-    .main .one-page .nav-wrap {
-      width: 100%;
-      height: 100px;
-      display: flex;
-      justify-content: center;
-      position: fixed;
-      z-index: 1; }
-      .main .one-page .nav-wrap .nav-sub-wrap {
-        width: 96%;
-        display: flex;
-        justify-content: space-between; }
-        .main .one-page .nav-wrap .nav-sub-wrap .nav-logo {
-          display: flex;
-          align-items: center; }
-        .main .one-page .nav-wrap .nav-sub-wrap .nav-li-wrap {
-          display: flex;
-          align-items: center;
-          color: white;
-          font-size: 16px;
-          font-family: 'Noto Sans KR', sans-serif; }
-        .main .one-page .nav-wrap .nav-sub-wrap .nav-li-wrap .nav-li {
-          display: flex; }
-          .main .one-page .nav-wrap .nav-sub-wrap .nav-li-wrap .nav-li li {
-            margin-right: 80px;
-            font-weight: 500; }
-        .main .one-page .nav-wrap .nav-sub-wrap .eng {
-          display: flex;
-          align-items: center;
-          color: white;
-          font-size: 16px; }
-  .main .two-page {
-    width: 100%;
-    height: 100vh;
-    position: relative; }
-    .main .two-page .img-wrap {
-      position: absolute; }
-    .main .two-page .text-wrap {
-      height: 100%;
-      width: 100vw;
-      position: absolute;
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .main .two-page .text-wrap > p {
-        margin-top: 200px;
-        letter-spacing: 7px;
-        color: white;
-        font-size: 25px;
-        font-weight: 300; }
-      .main .two-page .text-wrap > strong {
-        margin-top: 30px;
-        color: white;
-        font-size: 86px;
-        font-weight: bold;
-        letter-spacing: -.05em; }
-      .main .two-page .text-wrap > ul {
-        display: flex;
-        position: absolute;
-        color: white; }
-        .main .two-page .text-wrap > ul > li {
-          width: 21vw;
+        justify-content: center; }
+        body .main .one-page .img-wrap .img-slider {
+          width: 100%;
           height: 100vh;
-          border: 1px solid rgba(255, 255, 255, 0.1);
           display: flex;
-          justify-content: center;
-          z-index: 100; }
-          .main .two-page .text-wrap > ul > li .inner {
-            width: 10vw; }
-            .main .two-page .text-wrap > ul > li .inner > strong {
-              margin-top: 550px;
-              display: flex;
-              justify-content: center;
-              font-size: 15px;
-              margin-bottom: 30px; }
-            .main .two-page .text-wrap > ul > li .inner .num {
-              font-size: 49px;
-              font-weight: 700;
-              display: flex;
-              flex-wrap: wrap;
-              font-style: italic; }
-              .main .two-page .text-wrap > ul > li .inner .num .num2 {
-                margin-left: 50px; }
-              .main .two-page .text-wrap > ul > li .inner .num span {
-                position: relative;
-                width: 56px;
-                color: transparent; }
-              .main .two-page .text-wrap > ul > li .inner .num span::after {
-                content: '';
-                position: absolute;
-                right: 0;
-                top: 50%;
-                width: 50px;
-                border-top: 1px solid white; }
-            .main .two-page .text-wrap > ul > li .inner > p {
-              display: none; }
-            .main .two-page .text-wrap > ul > li .inner > a {
-              display: none; }
-      .main .two-page .text-wrap > ul:hover li:hover {
-        background: linear-gradient(to top, black 4%, black 1%, transparent); }
-        .main .two-page .text-wrap > ul:hover li:hover .inner > strong {
-          transition-duration: 0.5s;
-          margin-top: 450px; }
-        .main .two-page .text-wrap > ul:hover li:hover .inner .num em {
-          color: orange; }
-        .main .two-page .text-wrap > ul:hover li:hover .inner > p {
-          margin-top: 30px;
+          position: absolute; }
+        body .main .one-page .img-wrap .img-btn {
+          width: 70%;
+          height: 100vh;
           display: flex;
-          justify-content: center;
-          font-weight: 200;
-          line-height: 150%;
-          right: 0; }
-        .main .two-page .text-wrap > ul:hover li:hover .inner .line-wrap {
-          margin: 35px;
+          position: absolute;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 10; }
+      body .main .one-page .nav-wrap {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        z-index: 1; }
+        body .main .one-page .nav-wrap .nav-sub-wrap {
+          width: 96%;
           display: flex;
-          justify-content: center; }
-          .main .two-page .text-wrap > ul:hover li:hover .inner .line-wrap .line {
-            width: 2.5vw;
-            border-bottom: 1px solid #979797; }
-        .main .two-page .text-wrap > ul:hover li:hover .inner > a {
-          width: 8vw;
-          text-decoration: none;
+          justify-content: space-between; }
+          body .main .one-page .nav-wrap .nav-sub-wrap .nav-logo {
+            display: flex;
+            align-items: center; }
+          body .main .one-page .nav-wrap .nav-sub-wrap .nav-li-wrap {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 16px;
+            font-family: 'Noto Sans KR', sans-serif; }
+          body .main .one-page .nav-wrap .nav-sub-wrap .nav-li-wrap .nav-li {
+            display: flex; }
+            body .main .one-page .nav-wrap .nav-sub-wrap .nav-li-wrap .nav-li li {
+              margin-right: 80px;
+              font-weight: 500; }
+          body .main .one-page .nav-wrap .nav-sub-wrap .eng {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 16px; }
+    body .main .two-page {
+      width: 100%;
+      height: 100vh;
+      position: relative; }
+      body .main .two-page .img-wrap {
+        width: 100%;
+        position: absolute; }
+      body .main .two-page .text-wrap {
+        height: 100%;
+        width: 100vw;
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body .main .two-page .text-wrap > p {
+          margin-top: 200px;
+          letter-spacing: 7px;
           color: white;
+          font-size: 25px;
+          font-weight: 300; }
+        body .main .two-page .text-wrap > strong {
+          margin-top: 30px;
+          color: white;
+          font-size: 86px;
+          font-weight: bold;
+          letter-spacing: -.05em; }
+        body .main .two-page .text-wrap > ul {
           display: flex;
-          justify-content: center;
-          background: url(http://www.mdmworld.co.kr/assets/pc/images/main/ico-link.png) 100% 55% no-repeat; }
+          position: absolute;
+          color: white; }
+          body .main .two-page .text-wrap > ul > li {
+            width: 22vw;
+            height: 100vh;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: center;
+            z-index: 100; }
+            body .main .two-page .text-wrap > ul > li .inner {
+              width: 10vw; }
+              body .main .two-page .text-wrap > ul > li .inner > strong {
+                margin-top: 550px;
+                display: flex;
+                justify-content: center;
+                font-size: 15px;
+                margin-bottom: 30px; }
+              body .main .two-page .text-wrap > ul > li .inner .num {
+                font-size: 49px;
+                font-weight: 700;
+                display: flex;
+                flex-wrap: wrap;
+                font-style: italic; }
+                body .main .two-page .text-wrap > ul > li .inner .num .num2 {
+                  margin-left: 50px; }
+                body .main .two-page .text-wrap > ul > li .inner .num span {
+                  position: relative;
+                  width: 56px;
+                  color: transparent; }
+                body .main .two-page .text-wrap > ul > li .inner .num span::after {
+                  content: '';
+                  position: absolute;
+                  right: 0;
+                  top: 50%;
+                  width: 50px;
+                  border-top: 1px solid white; }
+              body .main .two-page .text-wrap > ul > li .inner > p {
+                display: none; }
+              body .main .two-page .text-wrap > ul > li .inner > a {
+                display: none; }
+        body .main .two-page .text-wrap > ul:hover li:hover {
+          background: linear-gradient(to top, black 4%, black 1%, transparent); }
+          body .main .two-page .text-wrap > ul:hover li:hover .inner > strong {
+            transition-duration: 0.5s;
+            margin-top: 450px; }
+          body .main .two-page .text-wrap > ul:hover li:hover .inner .num em {
+            color: orange; }
+          body .main .two-page .text-wrap > ul:hover li:hover .inner > p {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            font-weight: 200;
+            line-height: 150%;
+            right: 0; }
+          body .main .two-page .text-wrap > ul:hover li:hover .inner .line-wrap {
+            margin: 35px;
+            display: flex;
+            justify-content: center; }
+            body .main .two-page .text-wrap > ul:hover li:hover .inner .line-wrap .line {
+              width: 2.5vw;
+              border-bottom: 1px solid #979797; }
+          body .main .two-page .text-wrap > ul:hover li:hover .inner > a {
+            width: 8vw;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            justify-content: center;
+            background: url(http://www.mdmworld.co.kr/assets/pc/images/main/ico-link.png) 100% 55% no-repeat; }
+    body .main .three-page {
+      width: 100%;
+      height: 100vh;
+      position: relative; }
+      body .main .three-page .img-wrap {
+        position: absolute; }
+      body .main .three-page .text-wrap {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px; }
+        body .main .three-page .text-wrap p {
+          font-size: 24px;
+          font-weight: 300;
+          letter-spacing: 6px;
+          margin-bottom: 20px; }
+        body .main .three-page .text-wrap > strong {
+          font-size: 88px;
+          font-weight: 700;
+          margin-bottom: 150px; }
+        body .main .three-page .text-wrap .tab > ul {
+          width: 59vw;
+          height: 50vh;
+          color: white;
+          align-items: center;
+          display: flex; }
+          body .main .three-page .text-wrap .tab > ul .div1:hover {
+            background-image: none;
+            background-color: orange;
+            margin-bottom: 60px;
+            transition-duration: 0.5s;
+            box-shadow: 30px 40px 30px 0px rgba(0, 0, 0, 0.3); }
+          body .main .three-page .text-wrap .tab > ul .div2:hover {
+            background-image: none;
+            background-color: orange;
+            margin-bottom: 60px;
+            transition-duration: 0.5s;
+            box-shadow: 30px 40px 30px 0px rgba(0, 0, 0, 0.3); }
+          body .main .three-page .text-wrap .tab > ul .div3:hover {
+            background-image: none;
+            background-color: orange;
+            margin-bottom: 60px;
+            transition-duration: 0.5s;
+            box-shadow: 30px 40px 30px 0px rgba(0, 0, 0, 0.3); }
+          body .main .three-page .text-wrap .tab > ul .div1 {
+            background-image: url(http://www.mdmworld.co.kr/assets/pc/images/main/bg-division1.jpg); }
+          body .main .three-page .text-wrap .tab > ul .div2 {
+            background-image: url(http://www.mdmworld.co.kr/assets/pc/images/main/bg-division2.jpg); }
+          body .main .three-page .text-wrap .tab > ul .div3 {
+            background-image: url(http://www.mdmworld.co.kr/assets/pc/images/main/bg-division3.jpg); }
+          body .main .three-page .text-wrap .tab > ul > li {
+            padding-left: 30px;
+            padding-top: 30px;
+            padding-bottom: 100px;
+            width: 16vw;
+            height: 22vh;
+            margin-left: 30px; }
+            body .main .three-page .text-wrap .tab > ul > li div {
+              display: flex;
+              flex-direction: column; }
+              body .main .three-page .text-wrap .tab > ul > li div strong {
+                font-size: 35px;
+                font-weight: 700;
+                margin-bottom: 20px; }
+              body .main .three-page .text-wrap .tab > ul > li div span {
+                color: lightgray;
+                font-size: 18px;
+                font-weight: 300;
+                letter-spacing: 1px;
+                margin-bottom: 35px; }
+              body .main .three-page .text-wrap .tab > ul > li div li {
+                font-size: 16px;
+                font-weight: 300; }
+              body .main .three-page .text-wrap .tab > ul > li div ul {
+                list-style-type: square;
+                padding: 0px; }
+                body .main .three-page .text-wrap .tab > ul > li div ul li::before {
+                  content: "·";
+                  margin: 0px;
+                  font-size: 20px; }
+                body .main .three-page .text-wrap .tab > ul > li div ul li {
+                  margin-bottom: 10px;
+                  width: 7.6vw;
+                  display: inline-block; }
+              body .main .three-page .text-wrap .tab > ul > li div a {
+                display: none; }
+    body .main .four-page .text-wrap {
+      width: 100vw;
+      height: 100vh; }
+      body .main .four-page .text-wrap p {
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 6px; }
+      body .main .four-page .text-wrap strong {
+        font-size: 88px;
+        font-weight: 700; }
