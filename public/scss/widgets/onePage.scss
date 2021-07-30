@@ -1,7 +1,8 @@
-.one-page{
+.one-page {
     position: relative;
-    width: 100%;
+    width:  100vw;
     height: 100vh;
+
     .img-wrap {
         width: 100vw;
         position: absolute;
@@ -10,7 +11,7 @@
         justify-content: center;
 
         .img-slider {
-            width: 100%;
+            width:  100vw;
             height: 100vh;
             display: flex;
             position: absolute;
@@ -26,14 +27,32 @@
             z-index: 10
         }
     }
+
+    .back-nav {
+        display: none;
+        width: 100vw;
+        z-index: 2;
+        position: absolute;
+        height: 50vh;
+        background-color: white;
+         position:fixed;
+    }
+
     .nav-wrap {
+        z-index: 100;
+    
+        height: 50vh;
+        width: 100vw;
+  
         width: 100%;
         height: 100px;
         display: flex;
         justify-content: center;
         position: fixed;
-        z-index: 1;
+        z-index: 100;
+
         .nav-sub-wrap {
+
             width: 96%;
             display: flex;
             justify-content: space-between;
@@ -42,24 +61,63 @@
                 display: flex;
                 align-items: center;
             }
+
             .nav-li-wrap {
-                display: flex;
+
                 align-items: center;
-                color: white;
+                color: black;
                 font-size: 16px;
                 font-family: 'Noto Sans KR', sans-serif;
-            }
-            
-            .nav-li-wrap{
-                
+
+                justify-content: center;
+
                 .nav-li {
+
                     display: flex;
-                    li {
-                        margin-right: 80px;
+                    color: black;
+
+
+                    >li {
+                       
+                        //margin-right: 80px;
                         font-weight: 500;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-right: 40px;
+
+                        >a {
+                            display: flex;
+
+                            color: white;
+                            text-decoration: none;
+                            margin: 35px
+                        }
+
+                        >ul {
+                            margin-top: 15px;
+
+                            >li {
+                                display: flex;
+                                justify-content: center;
+
+                                >a {
+                                    display: none;
+                                    font-size: 15px;
+                                    color: grey;
+                                    text-decoration: none;
+                                    margin-top: 20px;
+                                }
+                            }
+
+
+                        }
+
+
                     }
                 }
             }
+
             .eng {
                 display: flex;
                 align-items: center;
